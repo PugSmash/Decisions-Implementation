@@ -1,6 +1,8 @@
 class node(object):
-    def __init__(self, inbound=None, outbound=None):
+    def __init__(self, inbound=None, outbound=None, sink_node=False, source_node=False):
         self.name = ''
+        self.sink_node = sink_node
+        self.source_node = source_node
 
         if inbound:
             self.inbound = inbound
@@ -57,6 +59,9 @@ class graph(object):
                 return edge
             else:
                 pass
+
+    def get_path(start_node, end_node):
+        pass
 
 
 class edge:
