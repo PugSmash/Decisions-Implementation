@@ -52,7 +52,9 @@ def check_edge(start_node, end_node):
         else:
             pass
 
-while current_node.name != "6":
+final_node = "6"
+
+while current_node.name != final_node:
     route.append(current_node.name)
     current_node = traverse(current_node)
 
